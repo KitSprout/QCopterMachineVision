@@ -1,8 +1,15 @@
-﻿QCopterMachineVision
-====================
+﻿/*=====================================================================================================*/
+/*=====================================================================================================**
+* File Name   : Readme.txt
+* Author      : Hom19910422
+* Version     : V1.0
+* Date        : 2013/07/27
+* Description : QCopterMachineVision Information
+**=====================================================================================================*/
+/*=====================================================================================================*/
 
 Wiki
-https://github.com/Hom19910422/QCopterMachineVision/wiki
+．https://github.com/Hom19910422/QCopterMachineVision/wiki
 
 攝像板　MachineVision
 ．控制器　STM32F407VE 100Pin 168MHz DSP FPU
@@ -14,9 +21,7 @@ https://github.com/Hom19910422/QCopterMachineVision/wiki
 ．1個FSMC接口　可擴充TFT螢幕、RAM
 ．1個USART接口　可擴充藍芽模組、電腦傳輸RS232
 
-Program
-
-TEST
+Test
 ．QCopterMV LED
 ．QCopterMV USART
 ．QCopterMV PWM
