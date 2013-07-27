@@ -1,4 +1,4 @@
-QCopterMachineVision
+﻿QCopterMachineVision
 ====================
 
 Wiki
@@ -17,10 +17,11 @@ https://github.com/Hom19910422/QCopterMachineVision/wiki
 Program
 
 TEST
-．QCopterFC LED
-．QCopterFC USART
-．QCopterFC PWM
-．QCopterFC CamSPI-Slave
-．QCopterFC SDIO
-．QCopterFC SCCB
-．QCopterFC FSMC
+．QCopterMV LED
+．QCopterMV USART
+．QCopterMV PWM
+．QCopterMV CamSPI-Slave
+．QCopterMV SDIO
+．QCopterMV SCCB
+．QCopterMV FSMC
+．QCopterMV OV7725
