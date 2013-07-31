@@ -2,8 +2,8 @@
 /*========================================================================================**
 * File Name   : Readme.txt
 * Author      : Hom19910422
-* Version     : v1.0
-* Date        : 2013/07/31
+* Version     : v1.1
+* Date        : 2013/08/01
 * Description : QCopterMachineVision Information
 **========================================================================================*/
 /*========================================================================================*/
@@ -21,6 +21,9 @@ Wiki
 ．1個FSMC接口　可擴充TFT螢幕、RAM
 ．1個USART接口　可擴充藍芽模組、電腦傳輸RS232
 
+Hardware
+．Use Altium Designer 13
+
 Test
 ．QCopterMV LED
 ．QCopterMV USART
@@ -30,3 +33,6 @@ Test
 ．QCopterMV SCCB
 ．QCopterMV FSMC
 ．QCopterMV OV7725
+
+Program
+．QcopterMV Camera
