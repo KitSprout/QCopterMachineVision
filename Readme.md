@@ -1,6 +1,6 @@
 ﻿QCopter Machine Vision
 ========
-* File Name   : README.md
+* File Name   : Readme.md
 * Author      : Hom19910422
 * Version     : v1.1
 * Date        : 2013/08/01
@@ -22,6 +22,10 @@ Hardware
 ========
 * Use Altium Designer 13
 
+Program
+========
+* QcopterMV Camera Pre-Alpha
+
 Test
 ========
 * QCopterMV LED
@@ -32,7 +36,3 @@ Test
 * QCopterMV SCCB
 * QCopterMV FSMC
 * QCopterMV OV7725
-
-Program
-========
-* QcopterMV Camera
