@@ -2,7 +2,7 @@
 ========
 * File Name   : Readme.md
 * Author      : Hom19910422
-* Version     : v1.1
+* Version     : v1.2
 * Update      : 2013/09/13
 * Description : QCopterMachineVision Information
 * Wiki        : https://github.com/Hom19910422/QCopterMachineVision/wiki
@@ -21,7 +21,7 @@
 Hardware
 ========
 * Use Altium Designer 13
-* PCB Size : 69.85 * 33.27mm
+* PCB Size : 68 * 33mm
 
 Program
 ========
