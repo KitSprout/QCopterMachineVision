@@ -3,13 +3,13 @@
 * File Name   : Readme.md
 * Author      : Hom19910422
 * Version     : v1.2
-* Update      : 2013/09/13
+* Update      : 2013/09/20
 * Description : QCopterMachineVision Information
 * Wiki        : https://github.com/Hom19910422/QCopterMachineVision/wiki
 
 攝像板　MachineVision
 ========
-* 控制器　STM32F407VE 100Pin 168MHz DSP FPU
+* 控制器　STM32F407V 100Pin 168MHz DSP FPU
 * 攝像頭　預計使用MT9V022(灰階)，使用DCMI操作
 * 儲存紀錄　SD卡，使用SDIO操作
 * 1個SPI接口　與飛控板連接、外擴其他裝置
