@@ -17,13 +17,10 @@ void GPIO_Config( void );
 int main( void )
 {
   u8 i = 0;
-  u8 TrData[8] = {0};
 
-	SystemInit();
-	GPIO_Config();
-	RS232_Config();
-
-	RS232_Print(USART3, (u8*)" ");
+  SystemInit();
+  GPIO_Config();
+  RS232_Config();
 
   while(1) {
     LED_G = ~LED_G;
@@ -31,13 +28,12 @@ int main( void )
     i++;
     if(i==255)  i = 0;
 
-    NumToChar(Type_D, 3, TrData, i);
-    RS232_Print(USART3, (u8*)"i = ");
-    RS232_Print(USART3, TrData);
-    RS232_Print(USART3, (u8*)"\r\n");
+    RS232_SendStr(USART3, (u8*)"i = ");
+    RS232_SendNum(USART3, Type_D, 3, i);
+    RS232_SendStr(USART3, (u8*)"\r\n");
 
     Delay_100ms(1);
-	}
+  }
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*/
