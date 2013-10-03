@@ -38,7 +38,7 @@ void Cam_Init( void )
   RCC_AHB2PeriphClockCmd(RCC_AHB2Periph_DCMI, ENABLE);//DCMI 
   RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_DMA2, ENABLE);//DMA2
   RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA | RCC_AHB1Periph_GPIOB | 
-                         RCC_AHB1Periph_GPIOC | RCC_AHB1Periph_GPIOE, ENABLE);//¨Ï¯àDCMIªºGPIO®ÉÄÁ
+                         RCC_AHB1Periph_GPIOC | RCC_AHB1Periph_GPIOE, ENABLE);//ä½¿èƒ½DCMIçš„GPIOæ™‚é˜
 
   GPIO_PinAFConfig(GPIOA, GPIO_PinSource6, GPIO_AF_DCMI);   // DCMI_PIXCLK
   GPIO_PinAFConfig(GPIOA, GPIO_PinSource4, GPIO_AF_DCMI);   // DCMI_HSYNC
@@ -127,7 +127,7 @@ unsigned char   OV_Init(void)
 	SCCB_Init();
 	if(OV_WriteReg(0x12, 0x80)) //Reset SCCB
 	{
-          return 1 ;//¿ù»~ªğ¦^
+          return 1 ;//éŒ¯èª¤è¿”å›
 	}
 	Delay_1ms(5);
   
@@ -156,8 +156,8 @@ void OV_HW(unsigned int  hstart,unsigned int vstart,unsigned int hstop,unsigned 
 	v=(v&0xc0)|((hstop&0x7)<<3)|(hstart&0x7);
 	OV_WriteReg(0x32,v);//HREF
 	
-	OV_WriteReg(0x19,(vstart>>2)&0xff);//VSTART ¶}©l°ª8¦ì
-	OV_WriteReg(0x1a,(vstop>>2)&0xff);//VSTOP	µ²§ô°ª8¦ì
+	OV_WriteReg(0x19,(vstart>>2)&0xff);//VSTART é–‹å§‹é«˜8ä½
+	OV_WriteReg(0x1a,(vstop>>2)&0xff);//VSTOP	çµæŸé«˜8ä½
 	OV_ReadReg(0x03,&v);
 	v=(v&0xf0)|((vstop&0x3)<<2)|(vstart&0x3);	
 	OV_WriteReg(0x03,v);//VREF																 
@@ -177,7 +177,7 @@ void SCCB_Init(void)
   GPIO_Init(GPIOB, &GPIO_InitStructure);
 }
 
-void SCCB_SID_OUT(void)//³]¸mSCCB_SID¬°¿é¥X
+void SCCB_SID_OUT(void)//è¨­ç½®SCCB_SIDç‚ºè¼¸å‡º
 {
   	GPIO_InitTypeDef  GPIO_InitStructure;
 
@@ -188,7 +188,7 @@ void SCCB_SID_OUT(void)//³]¸mSCCB_SID¬°¿é¥X
   	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
   	GPIO_Init(GPIOB, &GPIO_InitStructure);
 }
-void SCCB_SID_IN(void)//³]¸mSCCB_SID¬°¿é¤J
+void SCCB_SID_IN(void)//è¨­ç½®SCCB_SIDç‚ºè¼¸å…¥
 {
   	GPIO_InitTypeDef  GPIO_InitStructure;
 
@@ -201,13 +201,13 @@ void SCCB_SID_IN(void)//³]¸mSCCB_SID¬°¿é¤J
 
 void SCCB_Start(void)
 {
-    SCCB_SID_H();     //¼Æ¾Ú½u°ª¹q¥­
+    SCCB_SID_H();     //æ•¸æ“šç·šé«˜é›»å¹³
     Delay_1us(2);
-    SCCB_SIC_H();	   //¦b®ÉÄÁ½u°ªªº®É­Ô¼Æ¾Ú½u¥Ñ°ª¦Ü§C
+    SCCB_SIC_H();	   //åœ¨æ™‚é˜ç·šé«˜çš„æ™‚å€™æ•¸æ“šç·šç”±é«˜è‡³ä½
     Delay_1us(2);
     SCCB_SID_L();
     Delay_1us(2);
-    SCCB_SIC_L();	 //¼Æ¾Ú½u«ì´_§C¹q¥­¡A³æ¾Ş§@¨ç¼Æ¥²­n
+    SCCB_SIC_L();	 //æ•¸æ“šç·šæ¢å¾©ä½é›»å¹³ï¼Œå–®æ“ä½œå‡½æ•¸å¿…è¦
     Delay_1us(2);
 }
 
@@ -237,7 +237,7 @@ unsigned char  SCCB_Write(unsigned char  m_data)
 {
 	unsigned char  j,tem,K;
         K=m_data;
-	for(j=0;j<8;j++) //´`Àô8¦¸µo°e¼Æ¾Ú
+	for(j=0;j<8;j++) //å¾ªç’°8æ¬¡ç™¼é€æ•¸æ“š
 	{
 		if((K&0x80)==0x80)
 		{
@@ -259,8 +259,8 @@ unsigned char  SCCB_Write(unsigned char  m_data)
 	Delay_1us(2);
 	SCCB_SIC_H();	
 	Delay_1us(2);
-	if(SCCB_SID_STATE)tem=0;//SDA=1µo°e¥¢±Ñ
-	else tem=1;//SDA=0µo°e¦¨¥\¡Aªğ¦^1
+	if(SCCB_SID_STATE)tem=0;//SDA=1ç™¼é€å¤±æ•—
+	else tem=1;//SDA=0ç™¼é€æˆåŠŸï¼Œè¿”å›1
 	SCCB_SIC_L();	
 	Delay_1us(2);	
         SCCB_DATA_OUT;
@@ -274,7 +274,7 @@ unsigned char SCCB_Read(void)
 	
 	SCCB_DATA_IN;
 	Delay_1us(2);
-	for(j=8;j>0;j--) //´`Àô8¦¸±µ¦¬¼Æ¾Ú
+	for(j=8;j>0;j--) //å¾ªç’°8æ¬¡æ¥æ”¶æ•¸æ“š
 	{		     
 		Delay_1us(2);
 		SCCB_SIC_H();
@@ -288,61 +288,61 @@ unsigned char SCCB_Read(void)
 	return read;
 }
 
-//¼gOV7670±H¦s¾¹
+//å¯«OV7670å¯„å­˜å™¨
 unsigned char  OV_WriteReg(unsigned char  regID, unsigned char  regDat)
 {
-	SCCB_Start();//µo°eSCCB Á`½u¶}©l¶Ç¿é©R¥O
-	if(SCCB_Write(0x42)==0)//¼g¦a§}
+	SCCB_Start();//ç™¼é€SCCB ç¸½ç·šé–‹å§‹å‚³è¼¸å‘½ä»¤
+	if(SCCB_Write(0x42)==0)//å¯«åœ°å€
 	{
-		SCCB_Stop();//µo°eSCCB Á`½u°±¤î¶Ç¿é©R¥O
-		return 1;//¿ù»~ªğ¦^
+		SCCB_Stop();//ç™¼é€SCCB ç¸½ç·šåœæ­¢å‚³è¼¸å‘½ä»¤
+		return 1;//éŒ¯èª¤è¿”å›
 	}
 	Delay_1us(10);
-  	if(SCCB_Write(regID)==0)//¿n¦s¾¹ID
+  	if(SCCB_Write(regID)==0)//ç©å­˜å™¨ID
 	{
-		SCCB_Stop();//µo°eSCCB Á`½u°±¤î¶Ç¿é©R¥O
-		return 2;//¿ù»~ªğ¦^
+		SCCB_Stop();//ç™¼é€SCCB ç¸½ç·šåœæ­¢å‚³è¼¸å‘½ä»¤
+		return 2;//éŒ¯èª¤è¿”å›
 	}
 	Delay_1us(10);
-  	if(SCCB_Write(regDat)==0)//¼g¼Æ¾Ú¨ì¿n¦s¾¹
+  	if(SCCB_Write(regDat)==0)//å¯«æ•¸æ“šåˆ°ç©å­˜å™¨
 	{
-		SCCB_Stop();//µo°eSCCB Á`½u°±¤î¶Ç¿é©R¥O
-		return 3;//¿ù»~ªğ¦^
+		SCCB_Stop();//ç™¼é€SCCB ç¸½ç·šåœæ­¢å‚³è¼¸å‘½ä»¤
+		return 3;//éŒ¯èª¤è¿”å›
 	}
-  	SCCB_Stop();//µo°eSCCB Á`½u°±¤î¶Ç¿é©R¥O	
-  	return 0;//¦¨¥\ªğ¦^
+  	SCCB_Stop();//ç™¼é€SCCB ç¸½ç·šåœæ­¢å‚³è¼¸å‘½ä»¤	
+  	return 0;//æˆåŠŸè¿”å›
 }
 
-//ÅªOV7660±H¦s¾¹
+//è®€OV7660å¯„å­˜å™¨
 unsigned char  OV_ReadReg(unsigned char  regID, unsigned char  *regDat)
 {
-	//³q¹L¼g¾Ş§@³]¸m±H¦s¾¹¦a§}
+	//é€šéå¯«æ“ä½œè¨­ç½®å¯„å­˜å™¨åœ°å€
 	SCCB_Start();
-	if(SCCB_Write(0x42)==0)//¼g¦a§}
+	if(SCCB_Write(0x42)==0)//å¯«åœ°å€
 	{
-		SCCB_Stop();//µo°eSCCB Á`½u°±¤î¶Ç¿é©R¥O
-		return 1;//¿ù»~ªğ¦^
+		SCCB_Stop();//ç™¼é€SCCB ç¸½ç·šåœæ­¢å‚³è¼¸å‘½ä»¤
+		return 1;//éŒ¯èª¤è¿”å›
 	}
 	Delay_1us(10);
-  	if(SCCB_Write(regID)==0)//¿n¦s¾¹ID
+  	if(SCCB_Write(regID)==0)//ç©å­˜å™¨ID
 	{
-		SCCB_Stop();//µo°eSCCB Á`½u°±¤î¶Ç¿é©R¥O
-		return 2;//¿ù»~ªğ¦^
+		SCCB_Stop();//ç™¼é€SCCB ç¸½ç·šåœæ­¢å‚³è¼¸å‘½ä»¤
+		return 2;//éŒ¯èª¤è¿”å›
 	}
-	SCCB_Stop();//µo°eSCCB Á`½u°±¤î¶Ç¿é©R¥O	
+	SCCB_Stop();//ç™¼é€SCCB ç¸½ç·šåœæ­¢å‚³è¼¸å‘½ä»¤	
 	Delay_1us(10);	
-	//³]¸m±H¦s¾¹¦a§}«á¡A¤~¬OÅª
+	//è¨­ç½®å¯„å­˜å™¨åœ°å€å¾Œï¼Œæ‰æ˜¯è®€
 	SCCB_Start();
-	if(SCCB_Write(0x43)==0)//Åª¦a§}
+	if(SCCB_Write(0x43)==0)//è®€åœ°å€
 	{
-		SCCB_Stop();//µo°eSCCB Á`½u°±¤î¶Ç¿é©R¥O
-		return 3;//¿ù»~ªğ¦^
+		SCCB_Stop();//ç™¼é€SCCB ç¸½ç·šåœæ­¢å‚³è¼¸å‘½ä»¤
+		return 3;//éŒ¯èª¤è¿”å›
 	}
 	Delay_1us(10);
-  	*regDat=SCCB_Read();//ªğ¦^Åª¨ìªº­È
-  	noAck();//µo°eNACK©R¥O
-  	SCCB_Stop();//µo°eSCCB Á`½u°±¤î¶Ç¿é©R¥O
-  	return 0;//¦¨¥\ªğ¦^
+  	*regDat=SCCB_Read();//è¿”å›è®€åˆ°çš„å€¼
+  	noAck();//ç™¼é€NACKå‘½ä»¤
+  	SCCB_Stop();//ç™¼é€SCCB ç¸½ç·šåœæ­¢å‚³è¼¸å‘½ä»¤
+  	return 0;//æˆåŠŸè¿”å›
 }
 
 

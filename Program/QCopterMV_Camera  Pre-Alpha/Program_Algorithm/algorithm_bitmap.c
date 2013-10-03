@@ -4,11 +4,11 @@
 #include "algorithm_bitmap.h"
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**¨ç¼Æ : BMP_ReadInfo
-**¥\¯à : Read BMP Header Info
-**¿é¤J : BMP_Header, WriteData
-**¿é¥X : None
-**¨Ï¥Î : BMP_ReadInfo(&BMP_HEADER, BitmapHeader);
+**å‡½æ•¸ : BMP_ReadInfo
+**åŠŸèƒ½ : Read BMP Header Info
+**è¼¸å…¥ : BMP_Header, WriteData
+**è¼¸å‡º : None
+**ä½¿ç”¨ : BMP_ReadInfo(&BMP_HEADER, BitmapHeader);
 **=====================================================================================================*/
 /*=====================================================================================================*/
 void BMP_ReadInfo( BmpHeader* BMP_Header, u8* ReadData )
@@ -33,11 +33,11 @@ void BMP_ReadInfo( BmpHeader* BMP_Header, u8* ReadData )
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**¨ç¼Æ : BMP_WriteInfo
-**¥\¯à : Write BMP Header Info
-**¿é¤J : BMP_Header, WriteData
-**¿é¥X : None
-**¨Ï¥Î : BMP_WriteInfo(&BMP_HEADER, BitmapHeader);
+**å‡½æ•¸ : BMP_WriteInfo
+**åŠŸèƒ½ : Write BMP Header Info
+**è¼¸å…¥ : BMP_Header, WriteData
+**è¼¸å‡º : None
+**ä½¿ç”¨ : BMP_WriteInfo(&BMP_HEADER, BitmapHeader);
 **=====================================================================================================*/
 /*=====================================================================================================*/
 void BMP_WriteInfo( BmpHeader* BMP_Header, u8* WriteData )

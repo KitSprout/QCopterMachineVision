@@ -10,11 +10,11 @@
 TFT_TypeDef TFT;
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : SSD1963_Config
-**•\Ø‡ : SSD1963 ≥]©w & ∞t∏m
-**øÈ§J : None
-**øÈ•X : None
-**®œ•Œ : SSD1963_Config();
+**ÂáΩÊï∏ : SSD1963_Config
+**ÂäüËÉΩ : SSD1963 Ë®≠ÂÆö & ÈÖçÁΩÆ
+**Ëº∏ÂÖ• : None
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : SSD1963_Config();
 **=====================================================================================================*/
 /*=====================================================================================================*/
 void SSD1963_Config( void )
@@ -108,11 +108,11 @@ void SSD1963_Config( void )
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : TFT_WriteData
-**•\Ø‡ : Write Data
-**øÈ§J : WriteData
-**øÈ•X : None
-**®œ•Œ : 
+**ÂáΩÊï∏ : TFT_WriteData
+**ÂäüËÉΩ : Write Data
+**Ëº∏ÂÖ• : WriteData
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : 
 **=====================================================================================================*/
 /*=====================================================================================================*/
 static void TFT_WriteData( u32 WriteData )
@@ -121,11 +121,11 @@ static void TFT_WriteData( u32 WriteData )
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : TFT_WriteCom
-**•\Ø‡ : Write Command or Address
-**øÈ§J : WriteCom
-**øÈ•X : None
-**®œ•Œ : 
+**ÂáΩÊï∏ : TFT_WriteCom
+**ÂäüËÉΩ : Write Command or Address
+**Ëº∏ÂÖ• : WriteCom
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : 
 **=====================================================================================================*/
 /*=====================================================================================================*/
 static void TFT_WriteCom( u32 WriteCom )
@@ -134,11 +134,11 @@ static void TFT_WriteCom( u32 WriteCom )
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : TFT_WriteReg
-**•\Ø‡ : Write Register
-**øÈ§J : WriteCom, WriteData
-**øÈ•X : None
-**®œ•Œ : 
+**ÂáΩÊï∏ : TFT_WriteReg
+**ÂäüËÉΩ : Write Register
+**Ëº∏ÂÖ• : WriteCom, WriteData
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : 
 **=====================================================================================================*/
 ///*=====================================================================================================*/
 //static void TFT_WriteReg( u32 WriteCom, u32 WriteData )
@@ -184,11 +184,11 @@ static void TFT_WriteColor( u32 Color )
 #endif
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : SSD1963_CoeffiInit
-**•\Ø‡ : Set SSD1963 Coefficient
-**øÈ§J : None
-**øÈ•X : None
-**®œ•Œ : SSD1963_CoeffiInit()
+**ÂáΩÊï∏ : SSD1963_CoeffiInit
+**ÂäüËÉΩ : Set SSD1963 Coefficient
+**Ëº∏ÂÖ• : None
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : SSD1963_CoeffiInit()
 **=====================================================================================================*/
 /*=====================================================================================================*/
 static void SSD1963_CoeffiInit( void )
@@ -209,11 +209,11 @@ static void SSD1963_CoeffiInit( void )
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : SSD1963_Init
-**•\Ø‡ : SSD1963 Init
-**øÈ§J : None
-**øÈ•X : None
-**®œ•Œ : SSD1963_Init()
+**ÂáΩÊï∏ : SSD1963_Init
+**ÂäüËÉΩ : SSD1963 Init
+**Ëº∏ÂÖ• : None
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : SSD1963_Init()
 **=====================================================================================================*/
 /*=====================================================================================================*/
 void SSD1963_Init( void )
@@ -316,11 +316,11 @@ void SSD1963_Init( void )
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : TFT_Clear
-**•\Ø‡ : Clear Windows
-**øÈ§J : Color
-**øÈ•X : None
-**®œ•Œ : TFT_Clear(BLACK)
+**ÂáΩÊï∏ : TFT_Clear
+**ÂäüËÉΩ : Clear Windows
+**Ëº∏ÂÖ• : Color
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : TFT_Clear(BLACK)
 **=====================================================================================================*/
 /*=====================================================================================================*/
 void TFT_Clear( u32 Color )
@@ -349,11 +349,11 @@ void TFT_Clear( u32 Color )
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : TFT_SetWindow
-**•\Ø‡ : Set Window
-**øÈ§J : CoordiX_START, CoordiX_END, CoordiY_START, CoordiY_END
-**øÈ•X : None
-**®œ•Œ : TFT_SetWindow(0, 479, 0, 271);
+**ÂáΩÊï∏ : TFT_SetWindow
+**ÂäüËÉΩ : Set Window
+**Ëº∏ÂÖ• : CoordiX_START, CoordiX_END, CoordiY_START, CoordiY_END
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : TFT_SetWindow(0, 479, 0, 271);
 **=====================================================================================================*/
 /*=====================================================================================================*/
 void TFT_SetWindow( u16 CoordiX_START, u16 CoordiX_END, u16 CoordiY_START, u16 CoordiY_END )
@@ -371,24 +371,24 @@ void TFT_SetWindow( u16 CoordiX_START, u16 CoordiX_END, u16 CoordiY_START, u16 C
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : TFT_DrawPoint
-**•\Ø‡ : Draw Point
-**øÈ§J : CoordiX, CoordiY, Color
-**øÈ•X : None
-**®œ•Œ : TFT_DrawPoint(CoordiX, CoordiY, Color)
+**ÂáΩÊï∏ : TFT_DrawPoint
+**ÂäüËÉΩ : Draw Point
+**Ëº∏ÂÖ• : CoordiX, CoordiY, Color
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : TFT_DrawPoint(CoordiX, CoordiY, Color)
 **=====================================================================================================*/
 /*=====================================================================================================*/
 void TFT_DrawPoint( u16 CoordiX, u16 CoordiY, u32 Color )
 {
 	TFT_WriteCom(Com_SetColumnAddress);
-	TFT_WriteData(CoordiX>>8);					// ∞_©l¶aß}X
+	TFT_WriteData(CoordiX>>8);					// Ëµ∑ÂßãÂú∞ÂùÄX
 	TFT_WriteData(CoordiX);
-	TFT_WriteData(CoordiX>>8);					// µ≤ßÙ¶aß}X
+	TFT_WriteData(CoordiX>>8);					// ÁµêÊùüÂú∞ÂùÄX
 	TFT_WriteData(CoordiX);
   TFT_WriteCom(Com_SetPageAddress);
-	TFT_WriteData(CoordiY>>8);					// ∞_©l¶aß}Y
+	TFT_WriteData(CoordiY>>8);					// Ëµ∑ÂßãÂú∞ÂùÄY
 	TFT_WriteData(CoordiY);
-	TFT_WriteData(CoordiY>>8);					// µ≤ßÙ¶aß}Y
+	TFT_WriteData(CoordiY>>8);					// ÁµêÊùüÂú∞ÂùÄY
 	TFT_WriteData(CoordiY);
 	TFT_WriteCom(Com_WriteMemoryStart);
 
@@ -396,11 +396,11 @@ void TFT_DrawPoint( u16 CoordiX, u16 CoordiY, u32 Color )
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : TFT_DrawLine
-**•\Ø‡ : Draw Line
-**øÈ§J : StartX, StartY, EndX, EndY, Color
-**øÈ•X : None
-**®œ•Œ : TFT_DrawLine(StartX, StartY, EndX, EndY, Color)
+**ÂáΩÊï∏ : TFT_DrawLine
+**ÂäüËÉΩ : Draw Line
+**Ëº∏ÂÖ• : StartX, StartY, EndX, EndY, Color
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : TFT_DrawLine(StartX, StartY, EndX, EndY, Color)
 **=====================================================================================================*/
 /*=====================================================================================================*/
 void TFT_DrawLine( u16 StartX, u16 StartY, u16 EndX, u16 EndY, u32 Color )
@@ -412,7 +412,7 @@ void TFT_DrawLine( u16 StartX, u16 StartY, u16 EndX, u16 EndY, u32 Color )
 	DeltaX = EndX - StartX;
 	DeltaY = EndY - StartY;
 
-	// ≠p∫‚ Slope
+	// Ë®àÁÆó Slope
 	if(DeltaX == 0)
 		Slope = 0;
 	else
@@ -421,7 +421,7 @@ void TFT_DrawLine( u16 StartX, u16 StartY, u16 EndX, u16 EndY, u32 Color )
 	DeltaX = fabs(DeltaX);
 	DeltaY = fabs(DeltaY);
 
-	// µeΩu
+	// Áï´Á∑ö
 	if(EndX<StartX) {
 		if(Slope<0) {
 			if(DeltaX>DeltaY) {
@@ -479,11 +479,11 @@ void TFT_DrawLine( u16 StartX, u16 StartY, u16 EndX, u16 EndY, u32 Color )
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : TFT_DrawLineX
-**•\Ø‡ : Draw X-Axis Line
-**øÈ§J : CoordiX, CoordiY, Length, Color
-**øÈ•X : None
-**®œ•Œ : TFT_DrawLine(CoordiX, CoordiY, Length, Color)
+**ÂáΩÊï∏ : TFT_DrawLineX
+**ÂäüËÉΩ : Draw X-Axis Line
+**Ëº∏ÂÖ• : CoordiX, CoordiY, Length, Color
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : TFT_DrawLine(CoordiX, CoordiY, Length, Color)
 **=====================================================================================================*/
 /*=====================================================================================================*/
 void TFT_DrawLineX( u16 CoordiX, u16 CoordiY, u16 Length, u32 Color )
@@ -495,11 +495,11 @@ void TFT_DrawLineX( u16 CoordiX, u16 CoordiY, u16 Length, u32 Color )
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : TFT_DrawLineY
-**•\Ø‡ : Draw Y-Axis Line
-**øÈ§J : CoordiX, CoordiY, Length, Color
-**øÈ•X : None
-**®œ•Œ : TFT_DrawLine(CoordiX, CoordiY, Length, Color)
+**ÂáΩÊï∏ : TFT_DrawLineY
+**ÂäüËÉΩ : Draw Y-Axis Line
+**Ëº∏ÂÖ• : CoordiX, CoordiY, Length, Color
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : TFT_DrawLine(CoordiX, CoordiY, Length, Color)
 **=====================================================================================================*/
 /*=====================================================================================================*/
 void TFT_DrawLineY( u16 CoordiX, u16 CoordiY, u16 Length, u32 Color )
@@ -511,11 +511,11 @@ void TFT_DrawLineY( u16 CoordiX, u16 CoordiY, u16 Length, u32 Color )
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : TFT_DrawRectangle
-**•\Ø‡ : Draw Rectangle
-**øÈ§J : CoordiX, CoordiY, Length, Width, Color
-**øÈ•X : None
-**®œ•Œ : TFT_DrawRectangle(CoordiX, CoordiY, Length, Width, Color)
+**ÂáΩÊï∏ : TFT_DrawRectangle
+**ÂäüËÉΩ : Draw Rectangle
+**Ëº∏ÂÖ• : CoordiX, CoordiY, Length, Width, Color
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : TFT_DrawRectangle(CoordiX, CoordiY, Length, Width, Color)
 **=====================================================================================================*/
 /*=====================================================================================================*/
 void TFT_DrawRectangle( u16 CoordiX, u16 CoordiY, u16 Length, u16 Width, u32 Color )
@@ -533,11 +533,11 @@ void TFT_DrawRectangle( u16 CoordiX, u16 CoordiY, u16 Length, u16 Width, u32 Col
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : TFT_DrawRectangleFull
-**•\Ø‡ : Draw Rectangle
-**øÈ§J : CoordiX, CoordiY, Length, Width, Color
-**øÈ•X : None
-**®œ•Œ : TFT_DrawRectangleFull(CoordiX, CoordiY, Length, Width, Color)
+**ÂáΩÊï∏ : TFT_DrawRectangleFull
+**ÂäüËÉΩ : Draw Rectangle
+**Ëº∏ÂÖ• : CoordiX, CoordiY, Length, Width, Color
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : TFT_DrawRectangleFull(CoordiX, CoordiY, Length, Width, Color)
 **=====================================================================================================*/
 /*=====================================================================================================*/
 void TFT_DrawRectangleFull( u16 CoordiX, u16 CoordiY, u16 Length, u16 Width, u32 Color )
@@ -550,11 +550,11 @@ void TFT_DrawRectangleFull( u16 CoordiX, u16 CoordiY, u16 Length, u16 Width, u32
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : TFT_DrawCircle
-**•\Ø‡ : Draw Circle
-**øÈ§J : CoordiX, CoordiY, Radius, Color
-**øÈ•X : None
-**®œ•Œ : TFT_DrawCircle(CoordiX, CoordiY, Radius, Color)
+**ÂáΩÊï∏ : TFT_DrawCircle
+**ÂäüËÉΩ : Draw Circle
+**Ëº∏ÂÖ• : CoordiX, CoordiY, Radius, Color
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : TFT_DrawCircle(CoordiX, CoordiY, Radius, Color)
 **=====================================================================================================*/
 /*=====================================================================================================*/
 void TFT_DrawCircle( u16 CoordiX, u16 CoordiY, u16 Radius, u32 Color )
@@ -577,7 +577,7 @@ void TFT_DrawCircle( u16 CoordiX, u16 CoordiY, u16 Radius, u32 Color )
 		TFT_DrawPoint(CoordiX+a, CoordiY+b, Color);             //6
 		TFT_DrawPoint(CoordiX-b, CoordiY+a, Color);
 		a++;
-		// ®œ•ŒBresenham∫‚™kµe∂Í
+		// ‰ΩøÁî®BresenhamÁÆóÊ≥ïÁï´Âúì
 		if(di<0)
 			di += 4*a+6;
 		else {
@@ -589,11 +589,11 @@ void TFT_DrawCircle( u16 CoordiX, u16 CoordiY, u16 Radius, u32 Color )
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : TFT_DrawPictureU8
-**•\Ø‡ : Draw Picture
-**øÈ§J : CoordiX, CoordiY, Length, Width, Pic
-**øÈ•X : None
-**®œ•Œ : TFT_DrawPicture(CoordiX, CoordiY, Length, Width, Pic)
+**ÂáΩÊï∏ : TFT_DrawPictureU8
+**ÂäüËÉΩ : Draw Picture
+**Ëº∏ÂÖ• : CoordiX, CoordiY, Length, Width, Pic
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : TFT_DrawPicture(CoordiX, CoordiY, Length, Width, Pic)
 **=====================================================================================================*/
 /*=====================================================================================================*/
 void TFT_DrawPicturePointU8( u16 CoordiX, u16 CoordiY, u16 Length, u16 Width, uc8 *Pic )
@@ -610,11 +610,11 @@ void TFT_DrawPicturePointU8( u16 CoordiX, u16 CoordiY, u16 Length, u16 Width, uc
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : TFT_DrawPictureU8
-**•\Ø‡ : Draw Picture
-**øÈ§J : CoordiX, CoordiY, Length, Width, Pic
-**øÈ•X : None
-**®œ•Œ : TFT_DrawPicture(CoordiX, CoordiY, Length, Width, Pic)
+**ÂáΩÊï∏ : TFT_DrawPictureU8
+**ÂäüËÉΩ : Draw Picture
+**Ëº∏ÂÖ• : CoordiX, CoordiY, Length, Width, Pic
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : TFT_DrawPicture(CoordiX, CoordiY, Length, Width, Pic)
 **=====================================================================================================*/
 /*=====================================================================================================*/
 void TFT_DrawPicturePoint( u16 CoordiX, u16 CoordiY, u16 Length, u16 Width, uc16 *Pic )
@@ -631,11 +631,11 @@ void TFT_DrawPicturePoint( u16 CoordiX, u16 CoordiY, u16 Length, u16 Width, uc16
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : TFT_DrawPicture
-**•\Ø‡ : Draw Picture
-**øÈ§J : CoordiX, CoordiY, Length, Width, Pic
-**øÈ•X : None
-**®œ•Œ : TFT_DrawPicture(CoordiX, CoordiY, Length, Width, Pic)
+**ÂáΩÊï∏ : TFT_DrawPicture
+**ÂäüËÉΩ : Draw Picture
+**Ëº∏ÂÖ• : CoordiX, CoordiY, Length, Width, Pic
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : TFT_DrawPicture(CoordiX, CoordiY, Length, Width, Pic)
 **=====================================================================================================*/
 /*=====================================================================================================*/
 void TFT_DrawPicture( u16 CoordiX, u16 CoordiY, u16 Length, u16 Width, uc16 *Pic )
@@ -650,11 +650,11 @@ void TFT_DrawPicture( u16 CoordiX, u16 CoordiY, u16 Length, u16 Width, uc16 *Pic
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : TFT_DrawGrayPicture
-**•\Ø‡ : Draw Gray Picture
-**øÈ§J : CoordiX, CoordiY, Length, Width, Pic
-**øÈ•X : None
-**®œ•Œ : TFT_DrawGrayPicture(CoordiX, CoordiY, Length, Width, Pic)
+**ÂáΩÊï∏ : TFT_DrawGrayPicture
+**ÂäüËÉΩ : Draw Gray Picture
+**Ëº∏ÂÖ• : CoordiX, CoordiY, Length, Width, Pic
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : TFT_DrawGrayPicture(CoordiX, CoordiY, Length, Width, Pic)
 **=====================================================================================================*/
 /*=====================================================================================================*/
 void TFT_DrawGrayPicture( u16 CoordiX, u16 CoordiY, u16 Length, u16 Width, uc8 *Pic )
@@ -669,11 +669,11 @@ void TFT_DrawGrayPicture( u16 CoordiX, u16 CoordiY, u16 Length, u16 Width, uc8 *
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : TFT_PutChar1206
-**•\Ø‡ : Put Char
-**øÈ§J : CoordiX, CoordiY, ChWord, FontColor, BackColor
-**øÈ•X : None
-**®œ•Œ : TFT_PutChar1206(x, y, "C", WHITE, BLACK)
+**ÂáΩÊï∏ : TFT_PutChar1206
+**ÂäüËÉΩ : Put Char
+**Ëº∏ÂÖ• : CoordiX, CoordiY, ChWord, FontColor, BackColor
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : TFT_PutChar1206(x, y, "C", WHITE, BLACK)
 **=====================================================================================================*/
 /*=====================================================================================================*/
 void TFT_PutChar1206( u16 CoordiX, u16 CoordiY, u8* ChWord, u32 FontColor, u32 BackColor )
@@ -685,19 +685,19 @@ void TFT_PutChar1206( u16 CoordiX, u16 CoordiY, u8* ChWord, u32 FontColor, u32 B
 		Tmp_Char = ASCII_12x6[*ChWord-32][i];
 		for(j=0; j<6; j++) {
 			if(((Tmp_Char>>j)&0x01) == 0x01)
-				TFT_DrawPoint(CoordiX+j, CoordiY+i, FontColor);	// ¶r≤≈√C¶‚
+				TFT_DrawPoint(CoordiX+j, CoordiY+i, FontColor);	// Â≠óÁ¨¶È°èËâ≤
 			else
-				TFT_DrawPoint(CoordiX+j, CoordiY+i, BackColor);	// ≠I¥∫√C¶‚
+				TFT_DrawPoint(CoordiX+j, CoordiY+i, BackColor);	// ËÉåÊôØÈ°èËâ≤
 		}
 	}
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : TFT_PutChar1608
-**•\Ø‡ : Put Char
-**øÈ§J : CoordiX, CoordiY, ChWord, FontColor, BackColor
-**øÈ•X : None
-**®œ•Œ : TFT_PutChar1608(x, y, "C", WHITE, BLACK)
+**ÂáΩÊï∏ : TFT_PutChar1608
+**ÂäüËÉΩ : Put Char
+**Ëº∏ÂÖ• : CoordiX, CoordiY, ChWord, FontColor, BackColor
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : TFT_PutChar1608(x, y, "C", WHITE, BLACK)
 **=====================================================================================================*/
 /*=====================================================================================================*/
 void TFT_PutChar1608( u16 CoordiX, u16 CoordiY, u8* ChWord, u32 FontColor, u32 BackColor )
@@ -709,19 +709,19 @@ void TFT_PutChar1608( u16 CoordiX, u16 CoordiY, u8* ChWord, u32 FontColor, u32 B
 		Tmp_Char = ASCII_16x8[*ChWord-32][i];
 		for(j=0; j<8; j++) {
 			if(((Tmp_Char>>(7-j))&0x01) == 0x01)
-				TFT_DrawPoint(CoordiX+j, CoordiY+i, FontColor);	// ¶r≤≈√C¶‚
+				TFT_DrawPoint(CoordiX+j, CoordiY+i, FontColor);	// Â≠óÁ¨¶È°èËâ≤
 			else
-				TFT_DrawPoint(CoordiX+j, CoordiY+i, BackColor);	// ≠I¥∫√C¶‚
+				TFT_DrawPoint(CoordiX+j, CoordiY+i, BackColor);	// ËÉåÊôØÈ°èËâ≤
 		}
 	}
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : TFT_PutChar1608_
-**•\Ø‡ : Put Char
-**øÈ§J : CoordiX, CoordiY, ChWord, FontColor, BackColor
-**øÈ•X : None
-**®œ•Œ : TFT_PutChar1608(x, y, "C", WHITE, BLACK)
+**ÂáΩÊï∏ : TFT_PutChar1608_
+**ÂäüËÉΩ : Put Char
+**Ëº∏ÂÖ• : CoordiX, CoordiY, ChWord, FontColor, BackColor
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : TFT_PutChar1608(x, y, "C", WHITE, BLACK)
 **=====================================================================================================*/
 /*=====================================================================================================*/
 void TFT_PutChar1608_( u16 CoordiX, u16 CoordiY, u8* ChWord, u32 FontColor, u32 BackColor )
@@ -733,19 +733,19 @@ void TFT_PutChar1608_( u16 CoordiX, u16 CoordiY, u8* ChWord, u32 FontColor, u32 
 		Tmp_Char = ASCII_16x8_[*ChWord-32][i];
 		for(j=0; j<8; j++) {
 			if(((Tmp_Char>>j)&0x01) == 0x01)
-				TFT_DrawPoint(CoordiX+j, CoordiY+i, FontColor);	// ¶r≤≈√C¶‚
+				TFT_DrawPoint(CoordiX+j, CoordiY+i, FontColor);	// Â≠óÁ¨¶È°èËâ≤
 			else
-				TFT_DrawPoint(CoordiX+j, CoordiY+i, BackColor);	// ≠I¥∫√C¶‚
+				TFT_DrawPoint(CoordiX+j, CoordiY+i, BackColor);	// ËÉåÊôØÈ°èËâ≤
 		}
 	}
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : TFT_PutStr
-**•\Ø‡ : Put String
-**øÈ§J : CoordiX, CoordiY, ChWord, FontStyle, FontColor, BackColor
-**øÈ•X : None
-**®œ•Œ : TFT_PutStr(x, y, "PUT CHAR", WHITE, BLACK)
+**ÂáΩÊï∏ : TFT_PutStr
+**ÂäüËÉΩ : Put String
+**Ëº∏ÂÖ• : CoordiX, CoordiY, ChWord, FontStyle, FontColor, BackColor
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : TFT_PutStr(x, y, "PUT CHAR", WHITE, BLACK)
 **=====================================================================================================*/
 /*=====================================================================================================*/
 void TFT_PutStr( u16 CoordiX, u16 CoordiY, u8 *ChWord, u8 FontStyle, u32 FontColor, u32 BackColor )
@@ -778,11 +778,11 @@ void TFT_PutStr( u16 CoordiX, u16 CoordiY, u8 *ChWord, u8 FontStyle, u32 FontCol
 }
 /*=====================================================================================================*/
 /*=====================================================================================================*
-**®Áº∆ : TFT_PutNum
-**•\Ø‡ : Put Number
-**øÈ§J : oordiX, CoordiY, Type, Length, NumData, FontColor, BackColor
-**øÈ•X : None
-**®œ•Œ : TFT_PutNum(CoordiX, CoordiY, Type_D, Length, NumData, WHITE, BLACK)
+**ÂáΩÊï∏ : TFT_PutNum
+**ÂäüËÉΩ : Put Number
+**Ëº∏ÂÖ• : oordiX, CoordiY, Type, Length, NumData, FontColor, BackColor
+**Ëº∏Âá∫ : None
+**‰ΩøÁî® : TFT_PutNum(CoordiX, CoordiY, Type_D, Length, NumData, WHITE, BLACK)
 **=====================================================================================================*/
 /*=====================================================================================================*/
 void TFT_PutNum( u16 CoordiX, u16 CoordiY, u8 Type, u8 Length, u32 NumData, u32 FontColor, u32 BackColor )

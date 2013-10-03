@@ -3,7 +3,7 @@
 * File Name   : Readme.md
 * Author      : Hom19910422
 * Version     : v1.2
-* Update      : 2013/09/29
+* Update      : 2013/10/03
 * Description : QCopterMachineVision Information
 * Wiki        : https://github.com/Hom19910422/QCopterMachineVision/wiki
 

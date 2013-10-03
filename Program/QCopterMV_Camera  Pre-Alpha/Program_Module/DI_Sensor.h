@@ -55,7 +55,7 @@ static const unsigned char  OV_reg[OV_REG_NUM][2]=
  
       
   ////////////////////////////////////////////////////////////
-      /*OV7725 QVGA RGB565把计 
+      /*浠ヤ笅鐐篛V7725 QVGA RGB565鍙冩暩 
        guanfu_wang  
        http://mcudiy.taobao.com/
       */
@@ -100,9 +100,9 @@ static const unsigned char  OV_reg[OV_REG_NUM][2]=
   {0x98,0x24},
   {0x99,0x38},
   {0x9a,0x9e},
-  {0x15,0x00}, //璶把计 
+  {0x15,0x00}, //閲嶈鍙冩暩 
   {0x9b,0x00},//set luma 
-  {0x9c,0x20},//set contrast //癸ゑ
+  {0x9c,0x20},//set contrast //灏嶆瘮
   {0xa7,0x40},//set saturation  
   {0xa8,0x40},//set saturation 
   {0xa9,0x80},//set hue 
@@ -142,7 +142,7 @@ static const unsigned char  OV_reg[OV_REG_NUM][2]=
   
   {0x47,0x08},
   {0x0e,0x01},
-  {0x0c,0x60},///璶
+  {0x0c,0x60},///閲嶈
   {0x09,0x03},
   
   {0x29,0x50},

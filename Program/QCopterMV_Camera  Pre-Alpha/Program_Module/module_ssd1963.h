@@ -107,18 +107,18 @@
 
 #if DATA_FORMAT == USE_RGB888
  	#define RGB(C_R, C_G, C_B)				((u32)(((C_R<<16)&0xFF0000)|((C_G<<8)&0x00FF00)|((C_B)&0x0000FF)))
-  #define WHITE			((u32)0xFFFFFF)	// ¥Õ¦â
-  #define BLACK			((u32)0x000000)	// ¶Â¦â
-  #define RED				((u32)0xFF0000)	// ¬õ¦â
-  #define GREEN			((u32)0x00FF00)	// ºñ¦â
-  #define BLUE			((u32)0x0000FF)	// ÂÅ¦â
-  #define MAGENTA		((u32)0xFF00FF)	// «~¬õ¦â
-  #define CYAN			((u32)0x00FFFF)	// «C¦â
-  #define YELLOW		((u32)0xFFFF00)	// ¶À¦â
-  #define BROWN			((u32)0x8B2323)	// ´Ä¦â
-  #define BRRED			((u32)0x8B1A1A)	// ´Ä¬õ¦â
-  #define GRAY			((u32)0xE6E6FA)	// ¦Ç¦â
-  #define LGRAY			((u32)0xF0F8FF)	// ²L¦Ç¦â
+  #define WHITE			((u32)0xFFFFFF)	// ç™½è‰²
+  #define BLACK			((u32)0x000000)	// é»‘è‰²
+  #define RED				((u32)0xFF0000)	// ç´…è‰²
+  #define GREEN			((u32)0x00FF00)	// ç¶ è‰²
+  #define BLUE			((u32)0x0000FF)	// è—è‰²
+  #define MAGENTA		((u32)0xFF00FF)	// å“ç´…è‰²
+  #define CYAN			((u32)0x00FFFF)	// é’è‰²
+  #define YELLOW		((u32)0xFFFF00)	// é»ƒè‰²
+  #define BROWN			((u32)0x8B2323)	// æ£•è‰²
+  #define BRRED			((u32)0x8B1A1A)	// æ£•ç´…è‰²
+  #define GRAY			((u32)0xE6E6FA)	// ç°è‰²
+  #define LGRAY			((u32)0xF0F8FF)	// æ·ºç°è‰²
 
 #elif DATA_FORMAT == USE_RGB565
  	#define RGB(C_R, C_G, C_B)				((u32)(((C_R<<8)&0xF800)|((C_G<<3)&0x07E0)|((C_B>>3)&0x001F)))
@@ -147,9 +147,9 @@ typedef struct {
 	u16 LPS;				// 
 	u16 VPS;
 	u16 FPS;
-	u16 Contrast;		// ¹ï¤ñ
-	u16 Brightness;	// «G«×
-	u16 Saturation;	// ¹¡©M
+	u16 Contrast;		// å°æ¯”
+	u16 Brightness;	// äº®åº¦
+	u16 Saturation;	// é£½å’Œ
 } TFT_TypeDef;
 /*=====================================================================================================*/
 /*=====================================================================================================*/
