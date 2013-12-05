@@ -1,30 +1,31 @@
-﻿QCopter Machine Vision
+﻿QCopter MV
 ========
 * Author      : [Hom](https://github.com/Hom19910422)
 * Version     : v1.2
-* Update      : 2013/11/26
+* Update      : 2013/12/05
 * Wiki        : https://github.com/Hom19910422/QCopterMachineVision/wiki
 
 攝像板　MachineVision
 ========
 * 控制器　STM32F407V 100Pin 168MHz DSP FPU
-* 攝像頭　MT9V022(灰階)，使用DCMI操作
+* 攝像頭　MT9V022(mono)，使用DCMI操作
 * 儲存紀錄　micro SD，使用SDIO操作
-* 1個SPI接口　與飛控板連接、外擴其他裝置
 * 1個USB接口　外擴其他裝置
+* 1個SPI接口　與QCopterFC、QCopterRC Mini連接
 * 7個PWM通道　連接LED、伺服馬達、超音波測距
-* 1個FSMC接口　可擴充TFT螢幕、RAM
+* 1個FSMC接口　可外接TFT
 
 攝像板　MachineVision( 預計 v2.0 版 )
 ========
-* 控制器　STM32F439V 100Pin 180MHz DSP FPU
-* 攝像頭　MT9V022(灰階)，使用DCMI操作
+* 控制器　STM32F439Z 144Pin 180MHz DSP FPU
+* 攝像頭　MT9V022(mono)，使用DCMI操作
 * 外擴RAM　IS42S16400J-5TL 64M SDRAM，使用FSMC操作
 * 儲存紀錄　micro SD，使用SDIO操作
-* 1個SPI接口　與飛控板連接、外擴其他裝置
+* 麥克風　ADMP522
 * 1個USB接口　外擴其他裝置
+* 1個SPI接口　與[QCopterFC](https://github.com/Hom19910422/QCopterFlightControl)、[QCopterRC](https://github.com/Hom19910422/QCopterRemoteControl)連接
 * 7個PWM通道　連接LED、伺服馬達、超音波測距
-* 1個FSMC接口　可擴充TFT螢幕
+* 1個FSMC接口　可外接TFT
 
 Hardware
 ========
