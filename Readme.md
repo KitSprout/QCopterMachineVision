@@ -2,12 +2,11 @@
 ========
 * Author      : [Hom](https://github.com/Hom19910422)
 * Version     : v1.2
-* Update      : 2013/12/21
+* Update      : 2014/01/02
 
 Description
 ========
-QCopteMV 是一個機系視覺開發板，用來實現影像處理的裝置，  
-板子上引出 FSMC，可以外接螢幕，實現照相機功能。
+QCopteMV 是一個機系視覺開發板，用來實現影像處理的裝置，目前 QCopterMV 搭配 MT9V022 灰階的攝像頭模組，用以實現光流、特徵辨識等演算法，板子上引出 FSMC，可以外接 3.5-inch TFT 螢幕模組，實現照相機功能。
 
 Hardware
 ========
@@ -18,7 +17,14 @@ Hardware
 * PCB 尺寸 : 68 * 33mm
 * 設計軟體 [Altium Designer 13](http://www.altium.com/en/products/altium-designer) ( [PcbLib](https://github.com/CYACAcademic/AltiumDesigner_PcbLibrary) use AD PcbLib v0.? )
 
-**** v2.0 版本預計升級成 STM32F439Z，並加入 SDRAM、IMU、Microphone ****
+QCopterMV v2.0 預計修改 ( 尚未決定改版時間 )： 
+>1. 微控制器改為 LQFP144 的 STM32F42xZ 或 STM32F43xZ，增加運算速度及功能。  
+>2. 加入 [SDRAM](http://webcache.googleusercontent.com/search?q=cache:http://www.issi.com/WW/pdf/42S16400.pdf)，透過 FMC 操作，用以增加影像處理時所需的 RAM 空間。  
+>3. 加入 SPI 操作的 6DOF IMU，並預計新增影像自動水平的功能。  
+>4. 加入 [Microphone](http://www.analog.com/en/audiovideo-products/mems-microphones/admp522/products/product.html) 來做聲音紀錄，並預計加入聲控的功能，同時也可以用來做飛行器間的溝通。  
+>5. 更改 CamSPI 名稱為 FFCSPI，並修改腳位，使其可以連接 [QFC v2.2](https://github.com/Hom19910422/QCopterFlightControl)、[QRC](https://github.com/Hom19910422/QCopterRemoteControl)、[TFT_2.2-inch](https://github.com/Hom19910422/TFT_2.2-inch) 等裝置。  
+>6. 設計 Camera 模組，使用 MT9V034，預計會有灰階和彩色兩種版本，方便做不同的演算法實現。  
+>7. 設計類似 [Boscam HD19 雲台](http://www.dronesvision.net/en/fpv/1333-boscam-hd19-explorerhd-fpv-camera-pan-tilt-mount-for-fixwing-aircrafts.html)的裝置，用來攜帶 QCopterMV。 ( 該結構預計透過 3D Printer 製做 )  
 
 <img src="https://lh5.googleusercontent.com/-swW9VgqOZBU/UlA1hQbLx9I/AAAAAAAAD7s/co_2QQ1q5HY/s800/QCopterMV_System.png" height="537" width="708" />
 
