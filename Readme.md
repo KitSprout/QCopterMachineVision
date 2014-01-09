@@ -2,7 +2,7 @@
 ========
 * Author      : [Hom](https://github.com/Hom19910422)
 * Version     : v1.2
-* Update      : 2014/01/02
+* Update      : 2014/01/09
 
 Description
 ========
@@ -15,14 +15,14 @@ Hardware
 * 儲存紀錄 : micro SD，使用 SDIO 操作
 * 外接介面 : 1*USB ( Micro )、1*SPI ( FFC16 )、1*FSMC、7*PWM
 * PCB 尺寸 : 68 * 33mm
-* 設計軟體 [Altium Designer 13](http://www.altium.com/en/products/altium-designer) ( [PcbLib](https://github.com/CYACAcademic/AltiumDesigner_PcbLibrary) use AD PcbLib v0.? )
+* 設計軟體 [Altium Designer 13](http://www.altium.com/en/products/altium-designer) ( PcbLib use AD [PcbLib v?](https://github.com/OpenPCB/AltiumDesigner_PcbLibrary) )
 
 QCopterMV v2.0 預計修改 ( 尚未決定改版時間 )： 
 >1. 微控制器改為 LQFP144 的 STM32F42xZ 或 STM32F43xZ，增加運算速度及功能。  
 >2. 加入 [SDRAM](http://www.issi.com/WW/pdf/42-45S16400J.pdf)，透過 FMC 操作，用以增加影像處理時所需的 RAM 空間。  
 >3. 加入 SPI 操作的 6DOF IMU，並預計新增影像自動水平的功能。  
 >4. 加入 [Microphone](http://www.analog.com/en/audiovideo-products/mems-microphones/admp522/products/product.html) 來做聲音紀錄，並預計加入聲控的功能，同時也可以用來做飛行器間的溝通。  
->5. 更改 CamSPI 名稱為 FFCSPI，並修改腳位，使其可以連接 [QFC v2.2](https://github.com/Hom19910422/QCopterFlightControl)、[QRC](https://github.com/Hom19910422/QCopterRemoteControl)、[TFT_2.2](https://github.com/Hom19910422/TFT_2.2-inch) 等裝置。  
+>5. 更改 CamSPI 名稱為 FFCSPI，並修改腳位，使其可以連接 [QFC v2.2](https://github.com/Hom19910422/QCopterFlightControl)、[QRC](https://github.com/Hom19910422/QCopterRemoteControl)、[TFT_2.2](https://github.com/OpenPCB/TFT_2.2-inch) 等裝置。  
 >6. 設計 Camera 模組，使用 [MT9V034](https://www.aptina.com/products/image_sensors/mt9v034c12stc/)，預計會有灰階和彩色兩種版本，方便做不同的演算法實現。  
 >7. 設計類似 [Boscam HD19 雲台](http://www.dronesvision.net/en/fpv/1333-boscam-hd19-explorerhd-fpv-camera-pan-tilt-mount-for-fixwing-aircrafts.html)的裝置，用來攜帶 QCopterMV。 ( 該結構預計透過 3D Printer 製做 )  
 
