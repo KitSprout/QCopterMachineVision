@@ -2,11 +2,20 @@
 ========
 * Author　: [Hom](https://github.com/Hom19910422)
 * Version : v1.2
-* Update　: 2014/01/14
+* Update　: 2014/01/20
 
 Description
 ========
 QCopteMV 是一個機系視覺開發板，用來實現影像處理的裝置，目前 QCopterMV 搭配 MT9V022 灰階的攝像頭模組，用以實現光流、特徵辨識等演算法，板子上引出 FSMC，可以外接 3.5-inch TFT 螢幕模組，實現照相機功能。
+
+License
+========
+* 硬體(Hardware)採用 [CC BY-SA 3.0 TW](http://creativecommons.org/licenses/by-sa/3.0/tw/deed.zh_TW) 方式授權 
+  
+　　<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/tw/"><img alt="創用 CC 授權條款" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/tw/80x15.png" /></a>  
+　　<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"> QCopterMachineVision </span>由<a xmlns:cc="http://creativecommons.org/ns#" href="https://plus.google.com/u/0/112822505513154783828/posts" property="cc:attributionName" rel="cc:attributionURL"> Hom </a>製作，以<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/tw/deed.zh_TW"> 創用CC 姓名標示-相同方式分享 3.0 台灣 授權條款 </a>釋出。  
+
+* 軟體(Software)採用 [MIT License](http://opensource.org/licenses/MIT) 方式授權  
 
 Hardware
 ========
@@ -92,10 +101,3 @@ Schematic
 <img src="https://lh3.googleusercontent.com/-a9Fd9XCbPd8/UlA1gTOdX7I/AAAAAAAAD7k/DCISW0c75HI/s800/QCopterMV_Sch_SDCARD.png" height="245" width="386" />
 <br>＊USB<br>
 <img src="https://lh6.googleusercontent.com/-5qwNq3d9KLU/UlA1grvfI5I/AAAAAAAAD7c/V6Uqb0F4KLk/s800/QCopterMV_Sch_USB.png" height="217" width="301" />
-<br />
-<br />
-<a href="http://www.oshwa.org/">
-<img src="https://lh5.googleusercontent.com/-nIBTA3RL8Hk/Ug8wr_ly3-I/AAAAAAAADFY/hAfv5LAzHag/s144/oshw-logo-800-px.png">
-<br />
-<br />
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/tw/deed.zh_TW"><img alt="創用 CC 授權條款" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/tw/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"> QCopterMachineVision </span>由<a xmlns:cc="http://creativecommons.org/ns#" href="https://plus.google.com/u/0/112822505513154783828/posts" property="cc:attributionName" rel="cc:attributionURL"> Hom </a>製作，以<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/tw/deed.zh_TW">創用CC 姓名標示-相同方式分享 3.0 台灣 授權條款</a>釋出。<br />此作品衍生自<a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/QCopter" rel="dct:source"> QCopterTech </a>
