@@ -1,8 +1,8 @@
 ﻿[QCopterMV](https://github.com/QCopter/QCopterMachineVision)
 ========
-* Author　: [Hom](https://github.com/Hom-Wang)
+* Author  : [Hom](https://github.com/Hom-Wang)
 * Version : v1.2
-* Update　: 2014/01/27
+* Update  : 2014/02/02
 
 Description
 ========
@@ -32,7 +32,7 @@ QCopterMV v2.0 預計修改 ( 尚未決定改版時間 )：
 >3. 加入 SPI 操作的 6DOF IMU，並預計新增影像自動水平的功能。  
 >4. 加入 [Microphone](http://www.analog.com/en/audiovideo-products/mems-microphones/admp522/products/product.html) 來做聲音紀錄，並預計加入聲控的功能，同時也可以用來做飛行器間的溝通。  
 >5. 更改 CamSPI 名稱為 FFCSPI，並修改腳位，使其可以連接 [QFC v2.2](https://github.com/QCopter/QCopterFlightControl)、[QRC](https://github.com/QCopter/QCopterRemoteControl)、[TFT_2.2](https://github.com/OpenPCB/TFT_2.2-inch) 等裝置。  
->6. 設計 Camera 模組，使用 [MT9V034](https://www.aptina.com/products/image_sensors/mt9v034c12stc/)，預計會有灰階和彩色兩種版本，方便做不同的演算法實現。  
+>6. 設計 Camera 模組，使用 [MT9V034](https://www.aptina.com/products/image_sensors/mt9v034c12stc/) 8bit DCMI，預計會有灰階和彩色兩種版本，方便做不同的演算法實現。  
 >7. 設計類似 [Boscam HD19 雲台](http://www.dronesvision.net/en/fpv/1333-boscam-hd19-explorerhd-fpv-camera-pan-tilt-mount-for-fixwing-aircrafts.html)的裝置，用來攜帶 QCopterMV。 ( 該結構預計透過 3D Printer 製做 )  
 
 <img src="https://lh5.googleusercontent.com/-swW9VgqOZBU/UlA1hQbLx9I/AAAAAAAAD7s/co_2QQ1q5HY/s1200/QCopterMV_System.png" />
