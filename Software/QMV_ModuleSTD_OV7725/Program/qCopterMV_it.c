@@ -96,11 +96,42 @@ void SysTick_Handler( void ) { HAL_IncTick(); }
 //void OTG_HS_EP1_IN_IRQHandler( void )
 //void OTG_HS_WKUP_IRQHandler( void )
 //void OTG_HS_IRQHandler( void )
+extern uint16_t cameraImg[FRAME_W * FRAME_H];
+extern __IO uint32_t fps_count;
 void DCMI_IRQHandler( void )
 {
   if(DCMI_GetITStatus(DCMI_IT_FRAME)!= RESET) {
+    fps_count++;
     LED_B_Toggle();
+    // flip
+    for(uint32_t i = 0; i < (FRAME_H >> 1); i++) {
+      uint16_t tmp = 0;
+      uint16_t *ptr = &cameraImg[(FRAME_H - i - 1) * FRAME_W];
+      // swap
+      for(uint32_t j = 0; j < FRAME_W; j++) {
+        tmp = cameraImg[i * FRAME_W + j];
+        cameraImg[i * FRAME_W + j] = *ptr;
+        *ptr = tmp;
+        ptr++;
+      }
+    }
     LCD_SetWindow(0, 0, FRAME_W - 1, FRAME_H - 1);
+    for(uint32_t i = 0; i < FRAME_W * FRAME_H; i++) {
+      LCD_RAM = cameraImg[i];
+    }
+    LCD_SetWindow(FRAME_W, 0, FRAME_W + FRAME_W - 1, FRAME_W - 1);
+    for(uint32_t i = 0; i < FRAME_W * FRAME_H; i++) {
+      LCD_RAM = cameraImg[i] & (~(GREEN | BLUE));
+    }
+    LCD_SetWindow(0, FRAME_H, FRAME_W - 1, FRAME_H + FRAME_W - 1);
+    for(uint32_t i = 0; i < FRAME_W * FRAME_H; i++) {
+      LCD_RAM = cameraImg[i] & (~(RED | BLUE));
+    }
+    LCD_SetWindow(FRAME_W, FRAME_H, FRAME_W + FRAME_W - 1, FRAME_H + FRAME_W - 1);
+    for(uint32_t i = 0; i < FRAME_W * FRAME_H; i++) {
+      LCD_RAM = cameraImg[i] & (~(RED | GREEN));
+    }
+    DCMI_CaptureCmd(ENABLE);
     DCMI_ClearITPendingBit(DCMI_IT_FRAME);
   }
 }

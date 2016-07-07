@@ -9,6 +9,8 @@
 #define DCMI_DR_ADDRESS   0x50050028
 #define FSMC_LCD_ADDRESS  0x60020000
 
+uint16_t cameraImg[FRAME_W * FRAME_H] = {0};
+
 static SimuI2C_InitTypeDef SimuI2C;
 /*=====================================================================================================*/
 /*=====================================================================================================*
@@ -89,29 +91,29 @@ void OV7725_Config( void )
 //  I2C_Init(I2C1, &I2C_InitStruct);
 
   /* OV7725 DCMI ***************************************************************/
-  DCMI_InitStruct.DCMI_CaptureMode      = DCMI_CaptureMode_Continuous;  //DCMI_CaptureMode_SnapShot
+  DCMI_InitStruct.DCMI_CaptureMode      = DCMI_CaptureMode_SnapShot;
   DCMI_InitStruct.DCMI_SynchroMode      = DCMI_SynchroMode_Hardware;
   DCMI_InitStruct.DCMI_PCKPolarity      = DCMI_PCKPolarity_Rising;
   DCMI_InitStruct.DCMI_VSPolarity       = DCMI_VSPolarity_High;
   DCMI_InitStruct.DCMI_HSPolarity       = DCMI_HSPolarity_Low;
   DCMI_InitStruct.DCMI_CaptureRate      = DCMI_CaptureRate_All_Frame;
   DCMI_InitStruct.DCMI_ExtendedDataMode = DCMI_ExtendedDataMode_8b;
-  DCMI_Init(&DCMI_InitStruct); 
+  DCMI_Init(&DCMI_InitStruct);
 
   /* OV7725 DCMI DMA ***********************************************/ 
   DMA_DeInit(DMA2_Stream1);
   DMA_InitStruct.DMA_Channel            = DMA_Channel_1;  
   DMA_InitStruct.DMA_PeripheralBaseAddr = DCMI_DR_ADDRESS;	
-  DMA_InitStruct.DMA_Memory0BaseAddr    = (uint32_t)FSMC_LCD_ADDRESS;//SDRAM_BANK_ADDR;//FSMC_LCD_ADDRESS;
+  DMA_InitStruct.DMA_Memory0BaseAddr    = (uint32_t)cameraImg;//SDRAM_BANK_ADDR;//FSMC_LCD_ADDRESS;
   DMA_InitStruct.DMA_DIR                = DMA_DIR_PeripheralToMemory;
-  DMA_InitStruct.DMA_BufferSize         = 1;  //FRAME_W * FRAME_H >> 1;
+  DMA_InitStruct.DMA_BufferSize         = (FRAME_W * FRAME_H) >> 1;
   DMA_InitStruct.DMA_PeripheralInc      = DMA_PeripheralInc_Disable;
-  DMA_InitStruct.DMA_MemoryInc          = DMA_MemoryInc_Disable;  //DMA_MemoryInc_Enable;
+  DMA_InitStruct.DMA_MemoryInc          = DMA_MemoryInc_Enable;
   DMA_InitStruct.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Word;
   DMA_InitStruct.DMA_MemoryDataSize     = DMA_MemoryDataSize_HalfWord;
   DMA_InitStruct.DMA_Mode               = DMA_Mode_Circular;
   DMA_InitStruct.DMA_Priority           = DMA_Priority_High;
-  DMA_InitStruct.DMA_FIFOMode           = DMA_FIFOMode_Enable;  //DMA_FIFOMode_Disable;
+  DMA_InitStruct.DMA_FIFOMode           = DMA_FIFOMode_Enable;
   DMA_InitStruct.DMA_FIFOThreshold      = DMA_FIFOThreshold_Full;
   DMA_InitStruct.DMA_MemoryBurst        = DMA_MemoryBurst_Single;
   DMA_InitStruct.DMA_PeripheralBurst    = DMA_PeripheralBurst_Single;
