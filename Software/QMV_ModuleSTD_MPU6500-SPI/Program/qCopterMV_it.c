@@ -87,7 +87,13 @@ void SysTick_Handler( void ) { HAL_IncTick(); }
 //void DMA2_Stream5_IRQHandler( void )
 //void DMA2_Stream6_IRQHandler( void )
 //void DMA2_Stream7_IRQHandler( void )
-//void USART6_IRQHandler( void )
+void USART6_IRQHandler( void )
+{
+  if(USART_GetITStatus(USART6, USART_IT_RXNE) != RESET) {
+    UART6_irqEven();
+  }
+  USART_ClearFlag(USART6, USART_IT_RXNE);
+}
 //void I2C3_EV_IRQHandler( void )
 //void I2C3_ER_IRQHandler( void )
 //void OTG_HS_EP1_OUT_IRQHandler( void )

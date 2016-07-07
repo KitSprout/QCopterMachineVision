@@ -1,6 +1,7 @@
 /*====================================================================================================*/
 /*====================================================================================================*/
 #include "drivers\stm32f4_system.h"
+#include "modules\serial.h"
 #include "modules\mpu6500.h"
 
 #include "qCopterMV_bsp.h"
@@ -63,6 +64,16 @@ void QMV_GPIO_Config( void )
 }
 /*====================================================================================================*/
 /*====================================================================================================*/
+pFunc UART6_irqEven = NULL;
+void QMV_UART_Config( pFunc pUARTx )
+{
+  UART6_irqEven = pUARTx;
+
+  Serial_Config();
+  printf("\r\nHello World!\r\n\r\n");
+}
+/*====================================================================================================*/
+/*====================================================================================================*/
 void QMV_IMU_Config( void )
 {
   MPU_ConfigTypeDef MPU_ConfigStruct;
@@ -70,14 +81,19 @@ void QMV_IMU_Config( void )
   MPU6500_Config();
   delay_ms(10);
 
+  printf("IMU Init ...");
   MPU_ConfigStruct.MPU_Gyr_FullScale     = MPU_GyrFS_2000dps;
   MPU_ConfigStruct.MPU_Gyr_LowPassFilter = MPU_GyrLPS_41Hz;
   MPU_ConfigStruct.MPU_Acc_FullScale     = MPU_AccFS_4g;
   MPU_ConfigStruct.MPU_Acc_LowPassFilter = MPU_AccLPS_41Hz;
-  while(MPU6500_Init(&MPU_ConfigStruct) != SUCCESS) {
-    LED_R_Toggle();
-    delay_ms(100);
+  if(MPU6500_Init(&MPU_ConfigStruct) != SUCCESS) {
+    printf("ERROR\r\n");
+    while(1) {
+      LED_R_Toggle();
+      delay_ms(100);
+    }
   }
+  printf("SUCCESS\r\n");
   delay_ms(50);
 }
 /*====================================================================================================*/

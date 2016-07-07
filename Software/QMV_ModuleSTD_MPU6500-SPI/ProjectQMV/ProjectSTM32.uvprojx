@@ -438,6 +438,11 @@
               <FilePath>..\Program\drivers\stm32f4_delay.c</FilePath>
             </File>
             <File>
+              <FileName>stm32f4_usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Program\drivers\stm32f4_usart.c</FilePath>
+            </File>
+            <File>
               <FileName>stm32f4_spi.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Program\drivers\stm32f4_spi.c</FilePath>
@@ -473,6 +478,11 @@
           <GroupName>Module</GroupName>
           <Files>
             <File>
+              <FileName>serial.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Program\modules\serial.c</FilePath>
+            </File>
+            <File>
               <FileName>mpu6500.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Program\modules\mpu6500.c</FilePath>
@@ -481,6 +491,13 @@
         </Group>
         <Group>
           <GroupName>Algorithm</GroupName>
+          <Files>
+            <File>
+              <FileName>string.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Program\algorithms\string.c</FilePath>
+            </File>
+          </Files>
         </Group>
       </Groups>
     </Target>
