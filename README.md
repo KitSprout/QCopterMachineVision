@@ -2,7 +2,7 @@
 ========
 * Author  : [Hom](https://about.me/hom)
 * Version : v2.0(updating ...)
-* Update  : 2016/07/07
+* Update  : 2016/07/10
 
 Description
 ========
@@ -39,8 +39,7 @@ QCopterMV v2.0 預計修改：
 
 Related Documents
 ========
-* [Update Records - Hackpad](https://hom.hackpad.com/QCopterMV-sQqGKy2RUlY)
-* [Datasheet & BOM - Google Drive](https://drive.google.com/folderview?id=0BzL2wwAot6oPQWdKS3VMWmZ1Sjg&usp=drive_web)
+* [Google Drive](https://goo.gl/fuyLuI)
 
 Program
 ========
@@ -48,18 +47,16 @@ Program
 
 View
 ========
-<img src="https://lh3.googleusercontent.com/-Cy3CKYy0Y_w/Ud7K7XM_dFI/AAAAAAAAClc/evAgj8h4Sug/s1200/DSC_1179.jpg" />
-<img src="https://lh5.googleusercontent.com/-LGxC8SM5YcU/Ud7K7xpP_8I/AAAAAAAAClc/WOheIGD4gww/s1200/DSC_1184.jpg" />
-<img src="https://lh5.googleusercontent.com/-beekj574_I8/Ud7K5oIszrI/AAAAAAAAClc/P-EEJkbjrXs/s1200/DSC_1165.jpg" />
-<img src="https://lh5.googleusercontent.com/-PonR56Y_DV8/Ud7K699bGII/AAAAAAAAClc/dmLREQBeU3w/s1200/DSC_1169.jpg" />
-<img src="https://lh6.googleusercontent.com/-e9bpHqgJpKw/Ud7K7bGqDVI/AAAAAAAAClc/cZY7Y83zMEw/s1200/DSC_1173.jpg" />
-<img src="https://lh3.googleusercontent.com/-JoVNYnuH20k/Ud7K9y_R4BI/AAAAAAAAClc/OCoD4AMalt0/s1200/DSC_1238.jpg" />
-<img src="https://lh3.googleusercontent.com/-kZqt3l8fEWY/Ud7K-eDvCOI/AAAAAAAAClc/JQULeyFK128/s1200/DSC_1250.jpg" />
+<img src="https://lh3.googleusercontent.com/ue6zPvTZ3z9VI1eWQtJl3It5LIeV-sV-56b178vrD5NzY6ASAr090aUUhJ_BbtQby-CAoIUp114ydna3E6OPN9FIPSahUJ7c4iJkSYAbUqpcM2ZfE7Z9hH3cBzNkyMmBxMuZgcLXee7467L8MT798Q9kf1QArcCjtOsoo37hNoQORx_hXAXghHYe-qcAsxzGyrc398KBMU9RuTTVeuABkvdXd58kFqYr_ZRf9yg9q6CO__UzNd-LZ565zdSp3ccz7-DzvZOYkJCzIy7AeUZe_uPvgmYFr9PaFbRaZ2-Fqs-KszVl4FSOOUvlQfXUgfYpmfPiSpyAADaXHMnqW12ldBQYMC8r-aZakdho8wkHTFb35fyJ68ivSOe_rfHAA2KX45mr7gXiheJakCAO2KLo2BDMwqqF38P19LU-XetZQiVraqAr4UBnbe4Q_pK4igFalZKaLh2YjzDxKbOIqZy1H5ebu3pPz5s-RHiEfCEOGJA13sn0j2-zLy2e64Ed_rqMj0kAELfNpK4jVi-8yY74NbbTvSCUJiGEmeL_WU-cwrV3N8YU5MJgJMJehDwDzmpQ5EIx3v3-J7vOyy-iu6OhUco3zisdKixI=w1034-h775-no" />
+<img src="https://lh3.googleusercontent.com/DCbW94yBTGVT5zWZttmClBILkq6TUM5sgCaP0QeHRCKTmShS88CXgZ4XfzCpqJFHBasQGLTMLvcYyAYRhmrYofAhqA1mOFSAgJLKoqv_fkONCpCGa0MyVDcsEpfya9Z9QiZMlajM-MfzbEXXflJw67tmrnRuE3PbCzqpamLK5tZi8Dd7DKeAkAPpp-B9fEiI4YlGFttJHBhcCeVkg_bb8rEG5Zn_9TXDHveJht8hJMSkO1QlfthyNTmR2PmdZ7AO0Y3fEsd1o16RzcuiAnC0W_szpe923jZ_uuIGgl1ixjWTNI76BBR7b57WsEY6t_XIguQBnIOJh1_LJGDlT68KYWtgO1CAs5JkAcC7Aj_IAf3ikYb1kcotBfx-UUv9kHs2y1i5qrpoGg7hbBH2Xhyj6nGEGh49pSULAklDeR3PAOKdOQpUu5VM5qMYtXziGg5ZBWTjE4qKaD2yu3obY7-jSP835jZes07ynIX970i5ZuwX0r3hLk0lBC2bYufaFCCg-kZ4WIZyMxeLAleNCZPtZdUecxKXTDRMLl3A_DkhH0x7GOr4we-TqArhxOsgGdM9XFt0rsHtb2MrTAT2ZGQhOa-mftT9F27w=w1034-h775-no" />
+<img src="https://lh3.googleusercontent.com/1Sw_CvDjMI6NH4_1F4HMcRpAUrVuvjA6O-nHo9JvFfiRIQcvHaILRWJUbRaphnmL8xWPrkFF4vB16AjCYMGzb5fbqf9Qx8kpgfy3w1ReJhzposCZfWQU0CDE-5hCWuqnBLhBsrP4I6NFgEsHEVO16bFptAlpB9pc085Y5MNel3JgqWp142JlyJVUMZfZMwNJ7hunSgRBtqJgZNvWMm0IVc95EG6qjGo3x_LQ_8JugyBCyH3hhxG3Q6mGUqWSeh_1VRQpD17j4u_3Vnw1xHTJN1OwQhj_pHtV9-kgO2KITOZCozmcoNV04_6BZijsxiYhODJl5BMp9ZEaetpC2D7cdT3DU-eVXYAP88p488PHPCmbnM-tXPbEYU5_m7KQcv6-qspjGXaCUVYaQp7HO2-hwwgiGDLfbOZnJNc_10aDAFviicrnlFLQxJy-DbND8ZE65FZ2jBwbzpWeJDHpgsGquzslF5bGlvdz8-jYSlS2fMvOHKUPXH3Ig3pEVKgl9zIXGJigkcficnxIjaKqsE5IV1UxhvpVVKEKLM_RfQLjSmBmyo0oywBaXtiFj9WCfRzSv9z9UFYyu6NNRGh2qHyUR8a7KI8mR7I8=w1034-h775-no" />
+<img src="https://lh3.googleusercontent.com/ec8oIE2dwcr0_s0QZCXFnyh7BF5DpkSi4BUbh89zMOVRPE3HgvSdlD34t0rrZdmVF5AKAI9P9Jjkm3YbF4VfRNVeiVY-FCSNRtQeACs_vNy1bJkGHt6TdIpSt9BNBfABo00FHWMIU2SYwS3BZPtbBFexO4kqFGIzyFOuxYey4FJqwkU-v7eA9oXHvQfBnJuo6YiqcIdHrPJco2rJpVTrjWv3K83H12as80HdnWQHH8i9Zbgke-PSImvUlYIPCeSb6ywrp02t2TCqXyKNz6O076_Xk-WlZ-F5BoxTShHe69GDQFmpNkykxSpbB3Tg249-3uEEOY9A72z5NOv4P8Polf7dOjG7F5GcYwf5_DSjLs2_xTKXgCu_TAFxx77rIiLf_enIb-T0h604xVg1KQPxbUDgit0MScGfj1kI5TeS6nv8KsXp4vMDu-K-72MEudjfbMBqewXegFrd7_sjvTdUIvuiPZbOHzrzua3GiZ2Zs10GjuW_7SPWx0hgAzujnNA4XVaxh0CCKLHlCZkSmQPtJEzNLr4X3yy5EKvlRdooWyxTh58pyHdqp4nBh-OwhnqjrCxTK-k4shp0SaOIEAi-vMepAGvEyzKL=w1034-h775-no" />
 <br />
-更多圖片 [Google+ albums](https://plus.google.com/u/0/photos/112822505513154783828/albums/5930570551599057185)
+更多圖片 [Google+ albums](https://goo.gl/photos/MrFFJ4m715SMSjAVA)
 
 Config
 ========
 
 Schematic
 ========
+<img src="https://lh3.googleusercontent.com/JYEH6oaqF5HxJ-IpjEClijKtH1v2w919OY0XC80aiO0e26gNOEMFgAnEkak252IfexXOoVE1XtrCGwBkDIPHK4YzrW1DZ46Ym9-e8U9Hpx6JZuxl-f0fK44rD_Qlsw5Vvt__CH66OAdHMBinQC7_pHuiM_ieQE8RGdBfmqwtyyV2Ny1z_tRedYFG12OE2hGHMU0-WgolJpUxMvuw6E-Hxr9IpwkyjFlKK2CgybAw6Noa8CV0XvSOl0PWdC70qEmWpYUDsgOWSn7fj8pyER_2GmaIuTUOOfd_FTgv-cldA3cfTg9L5WoEe28qhjwvHz092NK7FF-N-rYtVrm2izFXsRKEi-nxXnsD6u34d7wseMI97Mekwqg_Zm5eho-jscS2sQaahuQkunDFdrPHJrDmWZFhDE5gQVHLX63dFKba5V8hge92VlBheOTZd0zhjWoXlewIJTZYB7Bw2rAY2XEcTURfeFcsrqosW7oAhVKMZ989PBGmg9kOOjd2l0LdmvJENFoP5WYzpP8XmuoIDfhKDgmmJ0kv9cZCRJoqrqmRkZd0zy5XyV8PIhj6_aBg4qOsM4bjWo8BBaMRarNv_roGK8cVGtqtaT02=w2336-h1200-no" />
