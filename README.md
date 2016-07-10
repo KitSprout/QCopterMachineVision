@@ -1,12 +1,12 @@
 ﻿[QCopterMV](https://github.com/QCopter/QCopterMachineVision)
 ========
 * Author  : [Hom](https://about.me/hom)
-* Version : v2.0(updating ...)
+* Version : v2.0
 * Update  : 2016/07/10
 
 Description
 ========
-QCopteMV 是一個機械視覺開發板，用來實現影像處理的裝置，QCopterMV 搭配 MT9V034(灰階/彩色) 的攝像頭模組，用以實現光流、特徵辨識等演算法，同時透過板子拉出來的 FMC 接口，可以外接 TFT 螢幕模組，實現照相機功能。
+QCopteMV 是一個機械視覺開發板，用來實現影像處理的裝置，QCopterMV 搭配 MT9V034 ( 灰階 / 彩色 ) 的攝像頭模組，用以實現光流、特徵辨識等演算法，同時透過板子拉出來的 FMC 接口，可以外接 TFT 螢幕模組，實現照相機功能。
 
 License
 ========
@@ -26,24 +26,9 @@ Hardware
 * PCB 尺寸 : 38.1 x 38.1 mm
 * 設計軟體 [Altium Designer 16](http://www.altium.com/en/products/altium-designer) ( PcbLib use AD [PcbLib v2.7](https://github.com/KitSprout/AltiumDesigner_PcbLibrary/releases/tag/v2.7) )
 
-QCopterMV v2.0 預計修改： 
->1. 微控制器改為 LQFP144 的 STM32F42xZ 或 STM32F43xZ，增加運算速度及功能。  
->2. 加入 [SDRAM](http://www.issi.com/WW/pdf/42-45S16400J.pdf)，透過 FMC 操作，用以增加影像處理時所需的 RAM 空間。  
->3. 加入 SPI 操作的 6DOF IMU，並預計新增影像自動水平的功能。  
->4. 加入 [Microphone](http://www.analog.com/en/audiovideo-products/mems-microphones/admp522/products/product.html) 來做聲音紀錄，並預計加入聲控的功能，同時也可以用來做飛行器間的溝通。  
->5. 更改 CamSPI 名稱為 FFCSPI，並修改腳位，使其可以連接 [QFC v2.2](https://github.com/QCopter/QCopterFlightControl)、[QRC](https://github.com/QCopter/QCopterRemoteControl)、[TFT_2.2](https://github.com/OpenPCB/TFT_2.2-inch) 等裝置。  
->6. 設計 Camera 模組，使用 [MT9V034](https://www.aptina.com/products/image_sensors/mt9v034c12stc/) 8bit DCMI，預計會有灰階和彩色兩種版本，方便做不同的演算法實現。  
->7. 設計類似 [Boscam HD19 雲台](http://www.dronesvision.net/en/fpv/1333-boscam-hd19-explorerhd-fpv-camera-pan-tilt-mount-for-fixwing-aircrafts.html)的裝置，用來攜帶 QCopterMV。 ( 該結構預計透過 3D Printer 製做 )  
-
-<img src="https://lh5.googleusercontent.com/-swW9VgqOZBU/UlA1hQbLx9I/AAAAAAAAD7s/co_2QQ1q5HY/s1200/QCopterMV_System.png" />
-
 Related Documents
 ========
 * [Google Drive](https://goo.gl/fuyLuI)
-
-Program
-========
-* QcopterMV Camera
 
 View
 ========
@@ -56,6 +41,7 @@ View
 
 Config
 ========
+<img src="https://lh3.googleusercontent.com/4Po7337NoiWxhgMfG1vXHk9g2MSbqrtmTYOuSxLJeKZ0neD7i8UhdLEBi-zh7o_OlIyE6LptnLwTlfTR0QQcLGpj76mubFZldpNuhaTk4S8WSh93DCo_EL0zeGwzk45yuOO5k1D1YoBsK9HlN9JgReyy0_ROZNisTyc1ihbVri03aGUbQi3UIhV0Cyvg2FprYW_NB_J5bVoq5iUeAwNqniZaKuv9m8J62Xe5l8Vf0ga07Fc08jDM3dipsZ-acrCzpcUBtwlfvKsx0UpPfsG_gubri8v_2P66ftkTSED4rNLT8GQmTIxCVe6RUSwpJyXenYHhPTqPzTSKVxe5-mfULlnYNiaRrP4tRnVAWq94DcKN7JiE9pWMC3EJRyh5BMUnAJixUQnExrOFAmD9Hf1RC6Ih_Xqe5982aXG4HEjID3Fp0-zV6vGIr90sf37VzKV4VMowsEUCR3-rdjVHt7iToCUUrXkq6aFRFd3AikI8O2RKq18QfA8B2QmeEObWBk6aiQZWBVj_S1D-_X9EzLGOSUC3YnxMtbsAbKZ_kdtSCER7PtZsP8VxLmci4zgTbVk7-LaNvo7eg1rJlCqvMH-mr7erBoAmZZXt=w1520-h1550-no" />
 
 Schematic
 ========
